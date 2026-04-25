@@ -12,7 +12,7 @@ WHAT WAS ACCOMPLISHED:
    ✓ D:\work\portfolio\src\components\Navbar.tsx
    ✓ D:\work\portfolio\src\components\TerminalHero.tsx
    
-   All now use: bg-[var(--color-terminal-*)], text-[var(--color-terminal-*)], border-[var(--color-terminal-*)]
+    All components now use the defined CSS variables for background, text, and borders.
 
 2. CREATED NEW COMPONENTS:
    ✓ D:\work\portfolio\src\components\AboutSection.tsx
@@ -38,7 +38,7 @@ WHAT WAS ACCOMPLISHED:
 COMPONENT DETAILS:
 
 Each component follows these principles:
-- Uses Tailwind v4 CSS variable syntax: var(--color-terminal-*)
+- Uses Tailwind v4 CSS variable syntax: terminal color variables
 - Properly typed with TypeScript interfaces
 - Marked with "use client" where needed (React hooks)
 - Responsive design with Tailwind breakpoints

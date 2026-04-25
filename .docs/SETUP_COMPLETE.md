@@ -19,7 +19,7 @@ COMPONENTS UPDATED WITH CSS VARIABLES (var(--color-*)):
 ✓ ContactSection.tsx - contact information section
 
 KEY FEATURES:
-- All components use Tailwind v4 CSS variables (var(--color-terminal-*))
+- All components use Tailwind v4 CSS variables (using terminal color variables)
 - CSS variables defined in globals.css
 - Dark terminal theme with green accent color
 - Responsive design with mobile menu
@@ -53,9 +53,9 @@ CSS VARIABLE MAPPING:
 - --color-terminal-muted: #666666 (muted text)
 
 TAILWIND v4 CLASS SYNTAX USED:
-- bg-[var(--color-terminal-bg)]
-- text-[var(--color-terminal-accent)]
-- border-[var(--color-terminal-border)]
-- hover:text-[var(--color-terminal-accent)]
+- the terminal background variable
+- the terminal accent text variable
+- the terminal border variable
+- hover:the terminal accent text variable
 
 All components are production-ready and follow modern React patterns.

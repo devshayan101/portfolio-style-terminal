@@ -13,7 +13,6 @@ export function TerminalHero() {
 
   useEffect(() => {
     if (currentLineIndex >= bioData.heroText.length) {
-      setShowCursor(false);
       return;
     }
 

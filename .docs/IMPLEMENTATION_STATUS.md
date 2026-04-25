@@ -23,9 +23,9 @@ DATA FILES:
 - src/lib/data.ts - Exists with portfolio data ✓
 - src/lib/utils.ts - Exists with utilities ✓
 
-TAILWIND CONFIG:
+STYLING CONFIG:
 - globals.css - CSS variables defined ✓
-- @theme with --color-terminal-* variables ✓
+- Theme configuration with terminal color variables ✓
 
 NEXT STEPS:
 1. Run: npm run build
