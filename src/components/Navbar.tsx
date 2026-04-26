@@ -3,16 +3,8 @@
 import { useState } from "react";
 import { TerminalPrompt } from "./TerminalPrompt";
 import { StatusBadge } from "./StatusBadge";
-import { bioData } from "@/lib/data";
+import { bioData, navLinks, terminalConfig } from "@/lib/data";
 import { cn } from "@/lib/utils";
-
-const navLinks = [
-  { label: "about", href: "#about" },
-  { label: "skills", href: "#skills" },
-  { label: "experience", href: "#experience" },
-  { label: "projects", href: "#projects" },
-  { label: "contact", href: "#contact" },
-];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +13,7 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b border-terminal-border bg-terminal-bg/80 backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="hover:opacity-80 transition-opacity">
-          <TerminalPrompt path="~/portfolio" />
+          <TerminalPrompt path={terminalConfig.rootPath} />
         </a>
 
         {/* Desktop */}

@@ -1,11 +1,11 @@
 import { SectionHeader } from "./SectionHeader";
-import { experienceData } from "@/lib/data";
+import { contentConfig, experienceData } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
 export function Timeline() {
   return (
     <section id="experience" className="py-24 px-6 max-w-4xl mx-auto">
-      <SectionHeader title="Experience" />
+      <SectionHeader title={contentConfig.experience.title} />
 
       <div className="relative border-l border-terminal-border ml-3 md:ml-6 space-y-12">
         {experienceData.map((exp, index) => (

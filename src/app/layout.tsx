@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
+import { siteConfig } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "John Doe | Full-Stack Engineer",
-  description: "Terminal-themed portfolio of a Full-Stack Developer.",
+  title: siteConfig.title,
+  description: siteConfig.description,
 };
 
 export default function RootLayout({
@@ -14,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning>
       <body className="antialiased bg-terminal-bg text-terminal-fg">
         {children}
       </body>

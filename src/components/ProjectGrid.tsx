@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { projectsData } from "@/lib/data";
+import { contentConfig, projectsData } from "@/lib/data";
 import { ProjectCard } from "./ProjectCard";
 import { SectionHeader } from "./SectionHeader";
 import { cn } from "@/lib/utils";
@@ -19,7 +19,7 @@ export function ProjectGrid() {
 
   return (
     <section id="projects" className="py-24 px-6 max-w-6xl mx-auto">
-      <SectionHeader title="Projects" />
+      <SectionHeader title={contentConfig.projects.title} />
 
       {/* Filter Bar */}
       <div className="flex flex-wrap gap-2 mb-8">
@@ -32,7 +32,7 @@ export function ProjectGrid() {
               : "bg-transparent text-terminal-muted border-terminal-border hover:border-terminal-accent"
           )}
         >
-          all
+          {contentConfig.projects.filterAll}
         </button>
         {allTags.map((tag) => (
           <button

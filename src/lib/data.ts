@@ -22,6 +22,65 @@ export interface Project {
   image?: string;
 }
 
+export interface NavLink {
+  label: string;
+  href: string;
+}
+
+export const siteConfig = {
+  title: "Alex Developer | Full-Stack Engineer",
+  description: "Terminal-themed portfolio of a Full-Stack Developer.",
+  footerText: "// Built with Next.js, Tailwind CSS, and lots of coffee.",
+  copyrightText: "All rights reserved.",
+};
+
+export const navLinks: NavLink[] = [
+  { label: "about", href: "#about" },
+  { label: "skills", href: "#skills" },
+  { label: "experience", href: "#experience" },
+  { label: "projects", href: "#projects" },
+  { label: "contact", href: "#contact" },
+];
+
+export const terminalConfig = {
+  headerTitle: "bash -- alex@dev",
+  rootPath: "~/portfolio",
+  aboutPath: "~/about/README.md",
+  contactPath: "~/contact",
+  prompts: {
+    email: "echo $EMAIL",
+    github: "./open_github.sh",
+    linkedin: "./open_linkedin.sh",
+    source: "source .env.local",
+  },
+  cta: {
+    projects: "$ view_projects.sh",
+    contact: "$ contact_me.sh",
+  }
+};
+
+export const contentConfig = {
+  about: {
+    title: "About Me",
+  },
+  skills: {
+    title: "Skills & Technologies",
+    categories: ["Frontend", "Backend", "DevOps", "Database", "Tools"] as const,
+  },
+  experience: {
+    title: "Experience",
+  },
+  projects: {
+    title: "Projects",
+    filterAll: "all",
+  },
+  contact: {
+    title: "Contact",
+    description: "Let's build something together.",
+    note: "# Or just send an email. I usually respond within 24 hours.",
+  },
+};
+
 export const bioData = {
   name: "Alex Developer",
   role: "Full-Stack Engineer",
@@ -152,3 +211,4 @@ export const projectsData: Project[] = [
     repo: "https://github.com/alexdev/pixelsort",
   },
 ];
+

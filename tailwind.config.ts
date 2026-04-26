@@ -11,10 +11,10 @@ const config: Config = {
         terminal: {
           bg: "#0a0a0a",
           fg: "#e0e0e0",
-          accent: "#00ff88",
-          "accent-dim": "rgba(0, 255, 136, 0.1)",
-          border: "#2a2a2a",
-          muted: "#666666",
+          accent: "#60a5fa", // Cyan from therobin.dev
+          "accent-dim": "rgba(96, 165, 250, 0.1)",
+          border: "#1a1a1a",
+          muted: "#525252",
         },
       },
       fontFamily: {

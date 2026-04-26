@@ -1,23 +1,23 @@
 import { SectionHeader } from "./SectionHeader";
 import { TerminalPrompt } from "./TerminalPrompt";
-import { bioData } from "@/lib/data";
+import { bioData, contentConfig, terminalConfig } from "@/lib/data";
 
 export function ContactSection() {
   return (
     <section id="contact" className="py-24 px-6 max-w-4xl mx-auto">
-      <SectionHeader title="Contact" />
+      <SectionHeader title={contentConfig.contact.title} />
 
       <div className="border border-terminal-border rounded-lg p-6 bg-terminal-accent-dim/5 font-mono space-y-6">
         <div className="flex items-center gap-2 text-terminal-muted text-sm">
           <span className="text-green-500">/*</span>
-          <span>Let&apos;s build something together.</span>
+          <span>{contentConfig.contact.description}</span>
           <span className="text-green-500">*/</span>
         </div>
 
         <div className="space-y-4">
           <div className="flex items-center gap-2 flex-wrap">
-            <TerminalPrompt path="~/contact" />
-            <span className="text-terminal-fg">echo $EMAIL</span>
+            <TerminalPrompt path={terminalConfig.contactPath} />
+            <span className="text-terminal-fg">{terminalConfig.prompts.email}</span>
           </div>
           <a
             href={`mailto:${bioData.email}`}
@@ -27,8 +27,8 @@ export function ContactSection() {
           </a>
 
           <div className="flex items-center gap-2 flex-wrap pt-2">
-            <TerminalPrompt path="~/contact" />
-            <span className="text-terminal-fg">./open_github.sh</span>
+            <TerminalPrompt path={terminalConfig.contactPath} />
+            <span className="text-terminal-fg">{terminalConfig.prompts.github}</span>
           </div>
           <a
             href={bioData.github}
@@ -40,8 +40,8 @@ export function ContactSection() {
           </a>
 
           <div className="flex items-center gap-2 flex-wrap pt-2">
-            <TerminalPrompt path="~/contact" />
-            <span className="text-terminal-fg">./open_linkedin.sh</span>
+            <TerminalPrompt path={terminalConfig.contactPath} />
+            <span className="text-terminal-fg">{terminalConfig.prompts.linkedin}</span>
           </div>
           <a
             href={bioData.linkedin}
@@ -54,10 +54,10 @@ export function ContactSection() {
         </div>
 
         <div className="pt-4 text-xs text-terminal-muted border-t border-terminal-border">
-          <TerminalPrompt path="~/contact" />
-          <span className="text-terminal-fg">source .env.local</span>
+          <TerminalPrompt path={terminalConfig.contactPath} />
+          <span className="text-terminal-fg">{terminalConfig.prompts.source}</span>
           <p className="mt-2 text-terminal-muted">
-            # Or just send an email. I usually respond within 24 hours.
+            {contentConfig.contact.note}
           </p>
         </div>
       </div>

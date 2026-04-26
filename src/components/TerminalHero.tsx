@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { TerminalPrompt } from "./TerminalPrompt";
 import { Cursor } from "./Cursor";
 import { StatusBadge } from "./StatusBadge";
-import { bioData } from "@/lib/data";
+import { bioData, terminalConfig } from "@/lib/data";
 
 export function TerminalHero() {
   const [lines, setLines] = useState<string[]>([]);
@@ -34,7 +34,7 @@ export function TerminalHero() {
             <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
             <div className="w-3 h-3 rounded-full bg-green-500/80" />
             <span className="ml-2 font-mono text-xs text-terminal-muted">
-              bash -- alex@dev
+              {terminalConfig.headerTitle}
             </span>
           </div>
 
@@ -42,13 +42,13 @@ export function TerminalHero() {
           <div className="p-6 font-mono text-sm md:text-base space-y-4 min-h-[300px]">
             {lines.map((line, index) => (
               <div key={index}>
-                <TerminalPrompt path="~/portfolio" />
+                <TerminalPrompt path={terminalConfig.rootPath} />
                 <span className="text-terminal-fg ml-0">{line}</span>
               </div>
             ))}
             {showCursor && (
               <div>
-                <TerminalPrompt path="~/portfolio" />
+                <TerminalPrompt path={terminalConfig.rootPath} />
                 <Cursor />
               </div>
             )}
@@ -67,13 +67,13 @@ export function TerminalHero() {
             href="#projects"
             className="text-terminal-accent hover:underline"
           >
-            $ view_projects.sh
+            {terminalConfig.cta.projects}
           </a>
           <a
             href="#contact"
             className="text-terminal-accent hover:underline"
           >
-            $ contact_me.sh
+            {terminalConfig.cta.contact}
           </a>
         </div>
       </div>

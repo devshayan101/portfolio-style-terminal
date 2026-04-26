@@ -1,24 +1,16 @@
 "use client";
 
-import { skillsData } from "@/lib/data";
+import { contentConfig, skillsData } from "@/lib/data";
 
 export function SkillsMarquee() {
-  const categories = [
-    "Frontend",
-    "Backend",
-    "DevOps",
-    "Database",
-    "Tools",
-  ] as const;
-
   return (
     <section id="skills" className="py-24 px-6 max-w-4xl mx-auto">
       <div className="font-mono text-terminal-muted mb-8 text-sm">
-        <span className="text-green-500">//</span> Skills & Technologies
+        <span className="text-green-500">//</span> {contentConfig.skills.title}
       </div>
 
       <div className="space-y-8">
-        {categories.map((cat) => {
+        {contentConfig.skills.categories.map((cat) => {
           const catSkills = skillsData.filter((s) => s.category === cat);
           return (
             <div key={cat}>

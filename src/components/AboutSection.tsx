@@ -1,11 +1,11 @@
 import { SectionHeader } from "./SectionHeader";
 import { TerminalPrompt } from "./TerminalPrompt";
-import { bioData } from "@/lib/data";
+import { bioData, contentConfig, terminalConfig } from "@/lib/data";
 
 export function AboutSection() {
   return (
     <section id="about" className="py-24 px-6 max-w-4xl mx-auto">
-      <SectionHeader title="About Me" />
+      <SectionHeader title={contentConfig.about.title} />
 
       <div className="border border-terminal-border rounded-lg p-6 bg-terminal-accent-dim/5 font-mono">
         <div className="flex items-start gap-4 flex-col md:flex-row">
@@ -17,7 +17,7 @@ export function AboutSection() {
           </div>
           <div className="space-y-4 flex-1">
             <div>
-              <TerminalPrompt path="~/about/README.md" />
+              <TerminalPrompt path={terminalConfig.aboutPath} />
             </div>
             <div className="space-y-2 text-terminal-fg/80">
               {bioData.about.map((paragraph, i) => (
