@@ -84,10 +84,10 @@ export const contentConfig = {
 export const bioData = {
   name: "ShayanDev",
   role: "Full-Stack Engineer",
-  email: "shayan@dev.com",
+  email: "shayandev98@gmail.com",
   github: "https://github.com/ShayanDev",
   linkedin: "https://linkedin.com/in/ShayanDev",
-  location: "San Francisco, CA",
+  location: "Remote",
   status: "available" as const,
   heroText: [
     "Initializing portfolio system...",
