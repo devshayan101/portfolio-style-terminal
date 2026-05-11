@@ -28,7 +28,7 @@ export interface NavLink {
 }
 
 export const siteConfig = {
-  title: "Alex Developer | Full-Stack Engineer",
+  title: "ShayanDev | Full-Stack Engineer",
   description: "Terminal-themed portfolio of a Full-Stack Developer.",
   footerText: "// Built with Next.js, Tailwind CSS, and lots of coffee.",
   copyrightText: "All rights reserved.",
@@ -43,7 +43,7 @@ export const navLinks: NavLink[] = [
 ];
 
 export const terminalConfig = {
-  headerTitle: "bash -- alex@dev",
+  headerTitle: "bash -- shayan@dev",
   rootPath: "~/portfolio",
   aboutPath: "~/about/README.md",
   contactPath: "~/contact",
@@ -82,11 +82,11 @@ export const contentConfig = {
 };
 
 export const bioData = {
-  name: "Alex Developer",
+  name: "ShayanDev",
   role: "Full-Stack Engineer",
-  email: "alex@developer.dev",
-  github: "https://github.com/alexdev",
-  linkedin: "https://linkedin.com/in/alexdev",
+  email: "shayan@dev.com",
+  github: "https://github.com/ShayanDev",
+  linkedin: "https://linkedin.com/in/ShayanDev",
   location: "San Francisco, CA",
   status: "available" as const,
   heroText: [
@@ -165,7 +165,7 @@ export const projectsData: Project[] = [
       "A high-performance analytics dashboard for visualizing real-time system metrics. Features dynamic charts, dark mode, and role-based access control.",
     tags: ["React", "TypeScript", "D3.js", "Node.js"],
     link: "https://nebula-demo.vercel.app",
-    repo: "https://github.com/alexdev/nebula",
+    repo: "https://github.com/ShayanDev/nebula",
   },
   {
     id: "2",
@@ -173,7 +173,7 @@ export const projectsData: Project[] = [
     description:
       "A terminal-based task manager built with Rust and TUI. Supports project hierarchies, priority scoring, and GitHub issue sync.",
     tags: ["Rust", "CLI", "GitHub API"],
-    repo: "https://github.com/alexdev/taskmatrix",
+    repo: "https://github.com/ShayanDev/taskmatrix",
   },
   {
     id: "3",
@@ -182,7 +182,7 @@ export const projectsData: Project[] = [
       "Infrastructure-as-code generator. Automatically translates UI diagrams into Terraform and CloudFormation templates.",
     tags: ["Next.js", "OpenAI API", "Terraform"],
     link: "https://cloudforge.vercel.app",
-    repo: "https://github.com/alexdev/cloudforge",
+    repo: "https://github.com/ShayanDev/cloudforge",
   },
   {
     id: "4",
@@ -190,7 +190,7 @@ export const projectsData: Project[] = [
     description:
       "An AI-powered documentation assistant that suggests code examples and explains complex functions inline.",
     tags: ["Python", "FastAPI", "LangChain", "React"],
-    repo: "https://github.com/alexdev/devdocs-ai",
+    repo: "https://github.com/ShayanDev/devdocs-ai",
   },
   {
     id: "5",
@@ -199,7 +199,7 @@ export const projectsData: Project[] = [
       "End-to-end encrypted messaging platform with ephemeral rooms, file sharing, and mobile-responsive design.",
     tags: ["Socket.io", "Express", "Redis", "React"],
     link: "https://socket-chat-demo.vercel.app",
-    repo: "https://github.com/alexdev/socketchat",
+    repo: "https://github.com/ShayanDev/socketchat",
   },
   {
     id: "6",
@@ -208,7 +208,7 @@ export const projectsData: Project[] = [
       "A creative coding experiment that sorts image pixels based on color algorithms to generate glitch art.",
     tags: ["HTML5 Canvas", "WebGL", "Creative Coding"],
     link: "https://pixelsort.vercel.app",
-    repo: "https://github.com/alexdev/pixelsort",
+    repo: "https://github.com/ShayanDev/pixelsort",
   },
 ];
 

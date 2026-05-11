@@ -11,7 +11,7 @@ export function TerminalPrompt({
 }: TerminalPromptProps) {
   return (
     <div className={cn("font-mono text-sm", className)}>
-      <span className="text-terminal-accent">user@dev</span>
+      <span className="text-terminal-accent">shayan@dev</span>
       <span className="text-terminal-fg">:</span>
       <span className="text-blue-400">{path}</span>
       <span className="text-terminal-fg">$ </span>
